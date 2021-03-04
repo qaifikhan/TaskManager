@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+#sidebar {
+    width: 280px;
+    min-height: 100vh;
+    background-color: #F6F2E6;
+    box-sizing: border-box;
+
+    padding: 48px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu-items {
+    color: #6c7a78;
+    margin: 8px 0;
+}
+
+.menu-items i {
+    margin-right: 16px;
+}
+
+.filter-section {
+    margin-top: 50px;
+}
+
+.filter-item {
+    color: #466E67;
+    margin: 8px 0;
+}
+
+.filter-item i {
+    margin-right: 16px;
+}
+
+.active-filter {
+    color: #FD7F77;
+}
+
+.active-filter-secondary {
+    color: #39C4A5;
+}
+
+#btn-add-task {
+    background-color: #FF4E48;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    padding: 16px;
+
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+    margin-top: 50px;
+    box-shadow: 2px 2px 12px #999;
+}
+
+#task-section {
+    width: calc(100% - 280px - 25%);
+    min-height: 100vh;
+    background-color: #163631;
+    padding: 48px 0;
+    box-sizing: border-box;
+    margin-left: 280px;
+}
+
+#task-section h1 {
+    margin: 0;
+    color: white;
+    padding: 0 48px;
+}
+
+#meeting-section {
+    min-height: 100vh;
+    width: 25%;
+    background-color: #FFFCF9;
+    padding: 48px;
+    box-sizing: border-box;
+}
+
+#meeting-section > h2 {
+    margin: 0;
+    color: #183932;
+}
+
+#user-info-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#user-info-wrapper > i {
+    color: #183932;
+    font-size: 20px;
+}
+
+#notif-count {
+    width: 55px;
+    background-color: #E6A389;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-left: 36px;
+    box-shadow: 2px 2px 4px #999;
+    color: #fff;
+}
+
+.meeting-card {
+    padding: 16px 24px;
+    box-sizing: border-box;
+
+    background-color: #FFF1D6;
+    border-radius: 16px;
+
+    margin-top: 24px;
+}
+
+.meeting-card:nth-child(4n + 1) {
+    background-color: #FFF1D6;
+}
+
+.meeting-card:nth-child(4n + 2) {
+    background-color: #D1E5FE;
+}
+
+.meeting-card:nth-child(4n + 3) {
+    background-color: #FFD8D9;
+}
+
+.meeting-card:nth-child(4n + 4) {
+    background-color: #D8FFE2;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.meeting-timing {
+    font-size: 12px;
+    margin: 0;
+    color: #756A51;
+}
+
+.meeting-title {
+    font-size: 16px;
+    margin: 0;
+    color: #756A51;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+
+.meeting-card:nth-child(4n + 2) .meeting-timing, .meeting-card:nth-child(4n + 2) .meeting-title {
+    color: #506573;
+}
+
+.meeting-card:nth-child(4n + 3) .meeting-timing, .meeting-card:nth-child(4n + 3) .meeting-title {
+    color: #8E6969;
+}
+
+.meeting-card:nth-child(4n + 4) .meeting-timing, .meeting-card:nth-child(4n + 4) .meeting-title {
+    color: #70937F;
+}
+
+
+#task-tabs-wrapper {
+    display: flex;
+    color: rgba(255, 255, 255, 0.7);
+    justify-content: space-between;
+
+    border-bottom: 1px solid #4F7870;
+}
+
+.task-tab {
+    width: 25%;
+    font-size: 18px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.task-tab.active {
+    color: #E84C45;
+    border-bottom: 3px solid #E84C45;
+}
+
+.tab-badge {
+    background-color: #2C574E;
+    font-size: 14px;
+    padding: 4px 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-right: 8px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#todo-lists {
+    padding: 48px;
+}
+
+.todo-item {
+    color: #4F7870;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-item > div {
+    display: flex;
+    align-items: center;
+}
+
+.todo-item i {
+    color: whitesmoke;
+    padding: 6px;
+    background-color: #FF4E48;
+    font-size: 10px;
+    border-radius: 4px;
+
+    margin-right: 16px;
+}
+
+.todo-message {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.todo-label {
+    width: 150px;
+    color: white;
+    padding: 12px 32px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+}
+
+.todo-label.approved {
+    background-color: #01C969;
+}
+
+.todo-label.inprogress {
+    background-color: #553536;
+    color: #C24324;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <div id="main-container">
+        <div id="sidebar">
+            <div>
+                <!-- Menu Items -->
+                <div class="menu-items"><i class="fas fa-inbox"></i>Inbox</div>
+                <div class="menu-items"><i class="far fa-star"></i>Today</div>
+                <div class="menu-items"><i class="far fa-calendar"></i> Upcoming</div>
+                <div class="menu-items"><i class="far fa-calendar"></i> Anytime</div>
+                <div class="menu-items"><i class="far fa-clipboard"></i> Someday</div>
+                <div class="menu-items"><i class="far fa-trash-alt"></i> Trash</div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-item active-filter"><i class="far fa-square"></i> Family</div>
+                <div class="filter-item"><i class="far fa-square"></i> Vacation Planning</div>
+                <div class="filter-item"><i class="far fa-square"></i> Buy a new car</div>
+                <div class="filter-item"><i class="far fa-square"></i> Festival Ideas</div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-item active-filter-secondary"><i class="far fa-square"></i> Work</div>
+                <div class="filter-item"><i class="far fa-square"></i> Onboarding Plan</div>
+                <div class="filter-item"><i class="far fa-square"></i> Invoice Review</div>
+                <div class="filter-item"><i class="far fa-square"></i> Presentation Work</div>
+            </div>
+
+            <button id="btn-add-task"><i class="fas fa-plus"></i></button>
+        </div>
+        <div id="task-section">
+            <div>
+                <h1>Today's Tasks</h1>
+
+                <div id="task-tabs-wrapper">
+                    <div class="task-tab"><span class="tab-badge">10</span>All</div>
+                    <div class="task-tab active">Important</div>
+                    <div class="task-tab"><span class="tab-badge">05</span>Notes</div>
+                    <div class="task-tab">Links</div>
+                </div>
+
+                <div id="todo-lists">
+                    <div class="todo-item">
+                        <div>
+                            <i class="fas fa-check"></i>
+                            <p class="todo-message">Create Userflow Social Application Design</p>
+                        </div>
+
+                        <button class="todo-label approved">Approved</button>
+                    </div>
+                    <div class="todo-item">
+                        <div>
+                            <i class="fas fa-check"></i>
+                            <p class="todo-message">Create Userflow Social Application Design</p>
+                        </div>
+
+                        <button class="todo-label inprogress">In Progress</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="meeting-section">
+            <div id="user-info-wrapper">
+                <i class="far fa-user"></i>
+                <div id="notif-count">5</div>
+            </div>
+            <h2>Meeting Schedule</h2>
+
+            <div>
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+    
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+    
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+    
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+    
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+    
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+    
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+    
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+    
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+    
+                <div class="meeting-card">
+                    <p class="meeting-timing">8:05 AM - 9:20 AM</p>
+    
+                    <h3 class="meeting-title">Meetings Nazmul Hassan</h3>
+    
+                    <img class="user-avatar" src="https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk2OGU4NzktODhhOC00Nzc2LWIyNzYtOWViMjljZGFiNTMxXkEyXkFqcGdeQXVyMTE1NTQwOTk@._V1_UY256_CR12,0,172,256_AL_.jpg" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?crop=faces&fit=crop&h=200&w=200&auto=compress&cs=tinysrgb" alt="User Avatar" />
+    
+                    <img class="user-avatar" src="https://randomuser.me/api/portraits/women/71.jpg" alt="User Avatar" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
